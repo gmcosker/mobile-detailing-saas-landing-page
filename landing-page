@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DetailFlow | The All-in-One App for Mobile Detailers</title>
+    <!-- Chosen Palette: Modern Auto Tech (Dark Charcoal, Vibrant Blue Accent, Light Gray/White Text) -->
+    <!-- Application Structure Plan: A single-page, top-to-bottom marketing landing page. The structure is designed to guide the user through a sales funnel: 1. Grab attention with a strong Hero section addressing their main pain points. 2. Detail the solutions in a clear, three-part Features/Benefits section. 3. Reassure them of the simplicity with a 'How it Works' section. 4. Convert the user with a final, prominent Call-to-Action. This linear flow is optimal for converting visitors by telling a clear, compelling story about the product's value. -->
+    <!-- Visualization & Content Choices: The source copy is purely textual marketing content. Goal: Persuade. Method: The primary presentation method is structured text (Headlines, Sub-headlines, Paragraphs) laid out with clean typography and spacing using HTML/Tailwind. Visuals: Simple, universally understood Unicode icons (🗓️ for scheduling, 🛡️ for protection, 📄 for paperwork) are used to visually reinforce the benefits without needing images, adhering to the no-raster-image preference. A placeholder for a product mock-up is included in the hero section as this is a standard and highly effective landing page convention for SaaS products. No charts or complex diagrams are needed as there is no quantitative data to display. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #38bdf8, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .modal-overlay {
+            background-color: rgba(0, 0, 0, 0.75);
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+
+    <!-- Header -->
+    <header class="py-4 px-6 md:px-12 fixed top-0 left-0 right-0 bg-gray-900 bg-opacity-80 backdrop-blur-md z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-white">DetailFlow</h1>
+            <button id="header-cta-button" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-5 rounded-lg transition-colors duration-300">
+                Get Started Free
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="pt-32 pb-20 text-center bg-gray-900">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-6xl font-extrabold text-white leading-tight">
+                    The One App to Run Your Entire <br class="hidden md:block"> <span class="gradient-text">Mobile Detailing Business</span>
+                </h2>
+                <p class="mt-6 text-lg md:text-xl text-gray-400 max-w-2xl mx-auto font-medium">
+                    Tired of chasing down clients, juggling calendars, and dealing with no-shows?
+                </p>
+                <p class="mt-4 text-gray-400 max-w-2xl mx-auto">
+                    Your time is money. Our app handles the chaos of your business so you can focus on what you do best—making cars look incredible.
+                </p>
+                <button id="hero-cta-button" class="mt-8 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-transform transform hover:scale-105">
+                    Start Your Free Trial
+                </button>
+                <div class="mt-16 max-w-4xl mx-auto">
+                    <img src="https://placehold.co/1200x600/1F2937/FFFFFF?text=App+Dashboard+Mockup" 
+                         alt="A mockup of the mobile detailing app dashboard on a phone screen, showing appointments and client details." 
+                         class="rounded-2xl shadow-2xl border-4 border-gray-700">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-24">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-3 gap-12 text-center">
+                    <!-- Feature 1: Stop Losing Money -->
+                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 shadow-lg">
+                        <div class="text-5xl mb-4">💰</div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Stop Losing Money</h3>
+                        <p class="text-gray-400">
+                            <strong>Automated Reminders & Secure Payments.</strong> Stop worrying about no-shows and awkward payment conversations. We send automated reminders to your clients and make it easy to get paid directly in the app.
+                        </p>
+                    </div>
+
+                    <!-- Feature 2: Protect Your Business -->
+                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 shadow-lg">
+                        <div class="text-5xl mb-4">🛡️</div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Protect Your Business</h3>
+                        <p class="text-gray-400">
+                            <strong>Time-Stamped Before-and-After Photos.</strong> Never face another dispute over pre-existing damage. Our app lets you take time-stamped photos that are automatically saved to each client's file, giving you undeniable proof of your work.
+                        </p>
+                    </div>
+                    
+                    <!-- Feature 3: Ditch the Paperwork -->
+                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 shadow-lg">
+                        <div class="text-5xl mb-4">📄</div>
+                        <h3 class="text-2xl font-bold text-white mb-2">Ditch the Paperwork</h3>
+                        <p class="text-gray-400">
+                            <strong>Simple, Professional Booking.</strong> Get your own custom booking link that shows your real-time availability. Your clients can book and pay in one place, so you can throw away the spreadsheets and messy notes for good.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section id="cta" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Get Started in Minutes</h2>
+                <p class="mt-4 text-lg text-gray-400">Start your free trial today. No credit card required. No complicated setup. <br>Get started today and reclaim your time.</p>
+                <button id="footer-cta-button" class="mt-8 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-lg text-xl transition-transform transform hover:scale-105">
+                    Get Started Free
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2025 DetailFlow. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Email Capture Modal -->
+    <div id="email-modal" class="fixed inset-0 flex items-center justify-center hidden z-50">
+        <div id="modal-overlay" class="modal-overlay absolute inset-0"></div>
+        <div class="bg-gray-800 rounded-xl p-8 max-w-lg mx-auto z-10 relative shadow-2xl border border-gray-700">
+            <button id="close-modal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-200 transition-colors duration-200">
+                <span class="text-2xl font-bold">&times;</span>
+            </button>
+            <h3 id="modal-title" class="text-2xl font-bold text-white mb-4 text-center">Start Your Free Trial</h3>
+            <p id="modal-message" class="text-gray-400 mb-6 text-center">Enter your email to get instant access. No credit card required.</p>
+            <form id="email-form" class="flex flex-col space-y-4">
+                <input type="email" id="email-input" class="p-3 rounded-lg bg-gray-700 text-white placeholder-gray-500 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your email address" required>
+                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition-colors duration-200">
+                    Sign Up Now
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        document.addEventListener('DOMContentLoaded', async function () {
+            const modal = document.getElementById('email-modal');
+            const modalOverlay = document.getElementById('modal-overlay');
+            const closeModalButton = document.getElementById('close-modal');
+            const ctaButtons = document.querySelectorAll('#header-cta-button, #hero-cta-button, #footer-cta-button');
+            const emailForm = document.getElementById('email-form');
+            const emailInput = document.getElementById('email-input');
+            const modalTitle = document.getElementById('modal-title');
+            const modalMessage = document.getElementById('modal-message');
+
+            let db;
+            let auth;
+            let appId;
+
+            try {
+                const firebaseConfig = JSON.parse(typeof __firebase_config !== 'undefined' ? __firebase_config : '{}');
+                appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
+
+                if (Object.keys(firebaseConfig).length === 0) {
+                    console.error("Firebase config is empty. Cannot initialize app.");
+                    return;
+                }
+
+                const app = initializeApp(firebaseConfig);
+                auth = getAuth(app);
+                db = getFirestore(app);
+                await signInAnonymously(auth);
+            } catch (e) {
+                console.error("Error initializing Firebase:", e);
+                modalTitle.textContent = "Error";
+                modalMessage.textContent = "An error occurred. Please try again later.";
+                emailForm.classList.add('hidden');
+                setTimeout(() => {
+                    modal.classList.remove('hidden');
+                }, 100);
+            }
+
+            function showModal() {
+                modal.classList.remove('hidden');
+            }
+
+            function hideModal() {
+                modal.classList.add('hidden');
+                setTimeout(() => {
+                    modalTitle.textContent = 'Start Your Free Trial';
+                    modalMessage.textContent = 'Enter your email to get instant access. No credit card required.';
+                    emailForm.classList.remove('hidden');
+                    emailInput.value = '';
+                }, 300);
+            }
+
+            ctaButtons.forEach(button => {
+                button.addEventListener('click', showModal);
+            });
+
+            closeModalButton.addEventListener('click', hideModal);
+            modalOverlay.addEventListener('click', hideModal);
+
+            emailForm.addEventListener('submit', async function (e) {
+                e.preventDefault();
+                const email = emailInput.value;
+                
+                try {
+                    const betaSignupsCollection = collection(db, `artifacts/${appId}/public/data/beta_signups`);
+                    await addDoc(betaSignupsCollection, {
+                        email: email,
+                        timestamp: new Date()
+                    });
+                    
+                    emailForm.classList.add('hidden');
+                    modalTitle.textContent = 'Thanks for Signing Up!';
+                    modalMessage.textContent = 'We will be in touch soon with an invitation to the beta.';
+
+                    setTimeout(hideModal, 2000);
+                } catch (e) {
+                    console.error("Error writing document:", e);
+                    modalTitle.textContent = "Error";
+                    modalMessage.textContent = "Could not save your email. Please try again.";
+                    emailForm.classList.remove('hidden');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
