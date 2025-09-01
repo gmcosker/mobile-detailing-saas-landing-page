@@ -1,194 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DetailFlow | The All-in-One App for Mobile Detailers</title>
     <!-- Chosen Palette: Modern Auto Tech (Dark Charcoal, Vibrant Blue Accent, Light Gray/White Text) -->
-    <!-- Application Structure Plan: A single-page, top-to-bottom marketing landing page. The structure is designed to guide the user from an initial pitch to a call-to-action (CTA). -->
-    <!-- Visualization & Content Choices: The source copy is purely textual marketing content. Goal: Persuade. The primary persuasive points are the mobile convenience, the time-saving benefits, and the professional appearance of the app itself. -->
+    <!-- Application Structure Plan: A single-page, top-to-bottom marketing landing page. The structure is designed to guide the user from the high-level value proposition to a low-friction call-to-action. -->
+    <!-- Visualization & Content Choices: The source copy is purely textual marketing content. Goal: Persuade. Method: The primary persuasive strategy is to address the pain points of the target audience (mobile detailers). -->
     <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-      body {
-        font-family: 'Inter', sans-serif;
-        background-color: #111827;
-      }
-      .gradient-text {
-        background-image: linear-gradient(to right, #6EE7B7, #3B82F6);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-      }
-      .blue-glow {
-        box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
-      }
-      .popup {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 100;
-        background-color: #1F2937;
-        padding: 2.5rem;
-        border-radius: 1rem;
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-        display: none;
-      }
-      .modal-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-        z-index: 99;
-        display: none;
-      }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827;
+        }
+        .gradient-text {
+            background-image: linear-gradient(to right, #4F46E5, #3B82F6, #06B6D4);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
     </style>
-  </head>
-  <body>
-    <!-- Main Content Wrapper -->
-    <div class="min-h-screen flex flex-col items-center justify-start text-white">
-      <!-- Hero Section -->
-      <header class="w-full max-w-7xl mx-auto py-12 px-6 text-center">
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4 tracking-tight">
-          The One App to Run Your Entire <br class="hidden md:inline">
-          <span class="gradient-text">Mobile Detailing Business</span>
-        </h1>
-        <p class="text-lg sm:text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
-          Tired of chasing down clients, juggling calendars, and dealing with no-shows?
-          <br>
-          Your time is money. Our app handles the chaos of your business so you can focus on what you do best—making cars look incredible.
-        </p>
-        <button id="get-started-btn" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105 blue-glow">
-          Get Started Free
-        </button>
-      </header>
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        
+        <!-- Header Section -->
+        <header class="flex justify-between items-center py-4">
+            <h1 class="text-2xl font-extrabold text-white">DetailFlow</h1>
+            <button id="get-started-free" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full transition-all duration-300">Get Started Free</button>
+        </header>
 
-      <!-- App Dashboard Mockup Section -->
-      <section class="w-full max-w-6xl mx-auto px-6 mb-24">
-        <div class="relative w-full rounded-2xl overflow-hidden shadow-2xl blue-glow bg-gray-800 p-8 flex items-center justify-center min-h-[300px]">
-          <span class="text-white text-3xl font-bold">App Dashboard Mockup</span>
+        <!-- Hero Section -->
+        <section class="text-center py-24">
+            <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tighter">The One App to Run Your Entire <span class="gradient-text">Mobile Detailing Business</span></h2>
+            <p class="mt-4 text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto">Tired of chasing down clients, juggling calendars, and dealing with no-shows?</p>
+            <p class="mt-6 text-xl sm:text-2xl font-medium text-gray-200">Your time is money. Our app handles the chaos of your business so you can focus on what you do best—making cars look incredible.</p>
+            <button id="start-your-free-trial" class="mt-8 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transform transition-all duration-300 hover:scale-105">Start Your Free Trial</button>
+        </section>
+
+        <!-- Feature Mockup Section -->
+        <section class="py-12">
+            <h3 class="text-center text-3xl font-bold text-gray-200">App Dashboard Mockup</h3>
+            <div class="mt-8 bg-gray-800 rounded-2xl shadow-xl overflow-hidden">
+                <div class="aspect-w-16 aspect-h-9 flex items-center justify-center p-8 text-gray-400">
+                    <p>App Dashboard Mockup Placeholder</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div id="email-modal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center z-50">
+            <div class="bg-gray-800 p-8 rounded-2xl shadow-2xl max-w-sm mx-4 text-center transform scale-95 opacity-0 transition-all duration-300" id="modal-content">
+                <h4 class="text-2xl font-bold mb-4">Get Early Access!</h4>
+                <p class="text-gray-400 mb-6">Enter your email below to be notified when we launch.</p>
+                <input type="email" id="email-input" placeholder="Your email address" class="w-full px-4 py-3 bg-gray-700 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4">
+                <button id="sign-up-button" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-full transition-colors duration-300">Sign Up Now</button>
+                <button id="close-modal-button" class="mt-4 text-gray-400 hover:text-gray-200 text-sm">No thanks, I'll wait.</button>
+            </div>
         </div>
-      </section>
     </div>
-
-    <!-- Popup Modal for Email Capture -->
-    <div id="email-popup" class="popup rounded-2xl">
-      <div class="flex flex-col items-center justify-center p-4">
-        <h2 class="text-2xl font-bold mb-2 text-white">Get Early Access!</h2>
-        <p class="text-gray-400 text-center mb-6">Enter your email below to be notified when we launch.</p>
-        <form id="email-form" class="w-full flex flex-col items-center">
-          <input type="email" id="email-input" placeholder="you@example.com" required
-            class="w-full p-3 mb-4 text-gray-200 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-blue-500">
-          <button type="submit" id="sign-up-btn" class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300">
-            Sign Up Now
-          </button>
-        </form>
-        <button id="close-popup-btn" class="mt-4 text-gray-500 hover:text-gray-300 transition duration-300">
-          No thanks, I'll wait.
-        </button>
-      </div>
-    </div>
-    <div id="modal-overlay" class="modal-overlay"></div>
-
-    <!-- Custom Alert Message Box -->
-    <div id="message-box" class="popup rounded-2xl p-6" style="display: none;">
-        <h3 id="message-title" class="text-xl font-bold mb-2 text-white"></h3>
-        <p id="message-body" class="text-gray-400 text-center mb-6"></p>
-        <button id="message-ok-btn" class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300">OK</button>
-    </div>
-
+    
     <script type="module">
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
-      import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+        // Firebase and Firestore imports are handled by the platform.
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+        
+        // This is the updated code block.
+        const firebaseConfig = JSON.parse('{"apiKey":"AIzaSyA3HAgrDo6IwGLlk5WUkQn1foxnnkv74oI","authDomain":"detailflow-app.firebaseapp.com","projectId":"detailflow-app","storageBucket":"detailflow-app.firebasestorage.app","messagingSenderId":"785192955134","appId":"1:785192955134:web:42fc70995bf21cdabe49af","measurementId":"G-ZG7JWTVG36"}');
+        
+        // This is the app ID provided by the platform.
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
 
-      // Global variables for Firebase config from Vercel's environment variables
-      const firebaseConfig = {
-          apiKey: "AIzaSyA3hAGrDo6IW6L1K5WUKQn1Foxnnkv74oI",
-          authDomain: "detailflow-app.firebaseapp.com",
-          projectId: "detailflow-app",
-          storageBucket: "detailflow-app.appspot.com",
-          messagingSenderId: "785192955134",
-          appId: "1:785192955134:web:42fc70995bf21cdabe49af",
-          measurementId: "G-ZG7JWTVG36"
-      };
-      
-      const app = initializeApp(firebaseConfig);
-      const db = getFirestore(app);
-
-      // DOM Elements
-      const getStartedBtn = document.getElementById('get-started-btn');
-      const emailPopup = document.getElementById('email-popup');
-      const modalOverlay = document.getElementById('modal-overlay');
-      const closePopupBtn = document.getElementById('close-popup-btn');
-      const emailForm = document.getElementById('email-form');
-      const emailInput = document.getElementById('email-input');
-      const messageBox = document.getElementById('message-box');
-      const messageTitle = document.getElementById('message-title');
-      const messageBody = document.getElementById('message-body');
-      const messageOkBtn = document.getElementById('message-ok-btn');
-
-      // Function to show a custom message box instead of alert()
-      function showMessageBox(title, message) {
-        messageTitle.textContent = title;
-        messageBody.textContent = message;
-        messageBox.style.display = 'block';
-        modalOverlay.style.display = 'block';
-      }
-
-      // Show popup on button click
-      getStartedBtn.addEventListener('click', () => {
-        emailPopup.style.display = 'block';
-        modalOverlay.style.display = 'block';
-      });
-
-      // Close popup on button click or overlay click
-      closePopupBtn.addEventListener('click', () => {
-        emailPopup.style.display = 'none';
-        modalOverlay.style.display = 'none';
-        emailForm.reset();
-      });
-
-      modalOverlay.addEventListener('click', () => {
-        emailPopup.style.display = 'none';
-        modalOverlay.style.display = 'none';
-        messageBox.style.display = 'none';
-        emailForm.reset();
-      });
-
-      // Close message box
-      messageOkBtn.addEventListener('click', () => {
-        messageBox.style.display = 'none';
-        modalOverlay.style.display = 'none';
-      });
-
-      // Handle form submission
-      emailForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const email = emailInput.value;
+        let firebaseApp, db;
 
         try {
-          // Add the email to the 'subscribers' collection in Firestore
-          await addDoc(collection(db, "subscribers"), {
-            email: email,
-            timestamp: new Date()
-          });
-          showMessageBox("Success!", "Thank you for signing up! We'll notify you when we launch.");
-        } catch (error) {
-          console.error("Error adding document: ", error);
-          showMessageBox("Error", "There was a problem signing up. Please try again.");
-        } finally {
-          emailPopup.style.display = 'none';
-          emailForm.reset();
-        }
-      });
-    </script>
-  </body>
-</html>
+            // Initialize Firebase
+            firebaseApp = initializeApp(firebaseConfig);
+            db = getFirestore(firebaseApp);
+            console.log("Firebase initialized successfully!");
 
+            // Show a success message if Firebase is initialized correctly
+            const messageBox = document.createElement('div');
+            messageBox.id = 'message-box';
+            messageBox.className = 'fixed top-4 left-1/2 -translate-x-1/2 z-[100] bg-green-500 text-white px-4 py-2 rounded-lg shadow-xl opacity-0 transition-opacity duration-500';
+            messageBox.textContent = 'Firebase connected!';
+            document.body.appendChild(messageBox);
+
+            setTimeout(() => {
+                messageBox.style.opacity = '1';
+                setTimeout(() => {
+                    messageBox.style.opacity = '0';
+                    setTimeout(() => messageBox.remove(), 500);
+                }, 3000);
+            }, 100);
+
+        } catch (error) {
+            console.error("Firebase initialization error:", error);
+            // In a real application, you would show a user-friendly error message here.
+        }
+
+        const modal = document.getElementById('email-modal');
+        const modalContent = document.getElementById('modal-content');
+        const getStartedButtons = document.querySelectorAll('#get-started-free, #start-your-free-trial');
+        const closeButton = document.getElementById('close-modal-button');
+        const signUpButton = document.getElementById('sign-up-button');
+        const emailInput = document.getElementById('email-input');
+
+        function openModal() {
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modalContent.classList.remove('scale-95', 'opacity-0');
+                modalContent.classList.add('scale-100', 'opacity-100');
+            }, 10);
+        }
+
+        function closeModal() {
+            modalContent.classList.remove('scale-100', 'opacity-100');
+            modalContent.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+
+        getStartedButtons.forEach(button => {
+            button.addEventListener('click', openModal);
+        });
+
+        closeButton.addEventListener('click', closeModal);
+
+        signUpButton.addEventListener('click', async () => {
+            const email = emailInput.value;
+            if (email) {
+                try {
+                    // Check if Firebase and Firestore are initialized
+                    if (!db) {
+                        throw new Error("Firestore not initialized.");
+                    }
+
+                    // Add a new document with a generated ID
+                    const collectionPath = `/artifacts/${appId}/public/data/beta_signups`;
+                    await addDoc(collection(db, collectionPath), {
+                        email: email,
+                        timestamp: new Date()
+                    });
+                    
+                    emailInput.value = '';
+                    closeModal();
+
+                    // Show a success message
+                    const successMessageBox = document.createElement('div');
+                    successMessageBox.className = 'fixed top-4 left-1/2 -translate-x-1/2 z-[100] bg-green-500 text-white px-4 py-2 rounded-lg shadow-xl opacity-0 transition-opacity duration-500';
+                    successMessageBox.textContent = 'Signed up! We will be in touch!';
+                    document.body.appendChild(successMessageBox);
+
+                    setTimeout(() => {
+                        successMessageBox.style.opacity = '1';
+                        setTimeout(() => {
+                            successMessageBox.style.opacity = '0';
+                            setTimeout(() => successMessageBox.remove(), 500);
+                        }, 3000);
+                    }, 100);
+
+                } catch (error) {
+                    console.error("Error adding document: ", error);
+
+                    // Show a failure message
+                    const errorMessageBox = document.createElement('div');
+                    errorMessageBox.className = 'fixed top-4 left-1/2 -translate-x-1/2 z-[100] bg-red-500 text-white px-4 py-2 rounded-lg shadow-xl opacity-0 transition-opacity duration-500';
+                    errorMessageBox.textContent = 'Error signing up. Please try again.';
+                    document.body.appendChild(errorMessageBox);
+
+                    setTimeout(() => {
+                        errorMessageBox.style.opacity = '1';
+                        setTimeout(() => {
+                            errorMessageBox.style.opacity = '0';
+                            setTimeout(() => errorMessageBox.remove(), 500);
+                        }, 3000);
+                    }, 100);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
